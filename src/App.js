@@ -76,6 +76,7 @@ function App(){
             <button className="button" onClick={handleSubmit}>{loading ? "searching..." :"search"}  </button>
 
           </form>
+          {repos.length==0 && <div>Enter a username and search</div>}
           <div className="results-container">
             {repos.map(renderRepo)}
 
